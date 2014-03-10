@@ -31,7 +31,7 @@ The example application can be used as the basis for a website that provides a l
 * Edit account (edit user profile)
 * List of users
 
-The list of users is visible to anyone. Use authentication to restrict it to the user who was created first, or implement authorization to restrict it to an administrator. See the "rails-devise-pundit":https://github.com/RailsApps/rails-devise-pundit example application if you wish to add authorization.
+The list of users is visible to anyone. Use authentication to restrict it to the user who was created first, or implement authorization to restrict it to an administrator. See the "rails-moodle-pundit":https://github.com/RailsApps/rails-moodle-pundit example application if you wish to add authorization.
 
 h4. Database
 
@@ -49,7 +49,7 @@ This is one in a series of Rails example apps and tutorials from the "RailsApps 
 * "Bootstrap and Rails":http://railsapps.github.io/rails-bootstrap/ shows to integrate Bootstrap
 * "Foundation and Rails":https://github.com/RailsApps/rails-foundation shows to integrate Foundation
 * "OmniAuth and Rails":https://github.com/RailsApps/rails-omniauth shows to use OmniAuth for authentication
-* "Devise and Pundit and Rails":https://github.com/RailsApps/rails-devise-pundit shows to use Pundit for authorization
+* "Devise and Pundit and Rails":https://github.com/RailsApps/rails-moodle-pundit shows to use Pundit for authorization
 
 h2. Accounts You Will Need
 
@@ -79,7 +79,7 @@ h3. Clone
 If you want to copy and customize the app with changes that are only useful for your own project, you can clone the GitHub repo. You'll need to search-and-replace the project name throughout the application. You probably should generate the app instead (see below). To clone:
 
 <pre>
-$ git clone git://github.com/RailsApps/rails-devise.git
+$ git clone git://github.com/RailsApps/rails-moodle.git
 </pre>
 
 You'll need "git":http://git-scm.com/ on your machine. See "Rails and Git":http://railsapps.github.io/rails-git.html.
@@ -91,12 +91,12 @@ If you want to use the project as a starter application, use the "Rails Composer
 To build the example application, Rails 4.1 must be installed in your development environment. Run the command:
 
 <pre>
-$ rails new rails-devise -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+$ rails new rails-moodle -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 </pre>
 
 The @$@ character indicates a shell prompt; don't include it when you run the command.
 
-This creates a new Rails app named @rails-devise@ on your computer. You can use a different name if you wish.
+This creates a new Rails app named @rails-moodle@ on your computer. You can use a different name if you wish.
 
 You'll see a prompt:
 
@@ -111,11 +111,11 @@ Enter "1" to select *Build a RailsApps example application*. You'll see a prompt
 
 <pre>
 question  Starter apps for Rails 4.1. More to come.
-      1)  rails-devise
+      1)  rails-moodle
       2)  rails-omniauth
 </pre>
 
-Choose *rails-devise*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
+Choose *rails-moodle*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
 
 The application generator template will ask you for additional preferences:
 
@@ -445,11 +445,11 @@ See the "Tutorial for Rails on Heroku":http://railsapps.github.io/rails-heroku-t
 
 h2. Troubleshooting
 
-Problems? Check the "issues":https://github.com/RailsApps/rails-devise/issues.
+Problems? Check the "issues":https://github.com/RailsApps/rails-moodle/issues.
 
 h2. Issues
 
-Please create a "GitHub issue":https://github.com/RailsApps/rails-devise/issues if you identify any problems or have suggestions for improvements.
+Please create a "GitHub issue":https://github.com/RailsApps/rails-moodle/issues if you identify any problems or have suggestions for improvements.
 
 h2. Where to Get Help
 
@@ -461,7 +461,7 @@ h2. Contributing
 
 If you make improvements to this application, please share with others.
 
-Send the author a message, create an "issue":https://github.com/RailsApps/rails-devise/issues, or fork the project and submit a pull request.
+Send the author a message, create an "issue":https://github.com/RailsApps/rails-moodle/issues, or fork the project and submit a pull request.
 
 If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
 
@@ -487,7 +487,7 @@ h2. Useful Links
 | "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial | "JavaScript and Rails":http://railsapps.github.io/rails-javascript-include-external.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
 | "Installing Rails":http://railsapps.github.io/installing-rails.html | "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html | "Rails Subscription Site with Recurly":https://tutorials.railsapps.org/rails-recurly-subscription-saas |
 | "Updating Rails":http://railsapps.github.io/updating-rails.html | "Git and Rails":http://railsapps.github.io/rails-git.html | "Startup Prelaunch Signup Application":http://railsapps.github.io/tutorial-rails-prelaunch-signup.html |
-| "Rails Composer":http://railsapps.github.io/rails-composer/ | "Email and Rails":http://railsapps.github.io/rails-send-email.html | "Devise with RSpec and Cucumber":http://railsapps.github.io/tutorial-rails-devise-rspec-cucumber.html |
+| "Rails Composer":http://railsapps.github.io/rails-composer/ | "Email and Rails":http://railsapps.github.io/rails-send-email.html | "Devise with RSpec and Cucumber":http://railsapps.github.io/tutorial-rails-moodle-rspec-cucumber.html |
 | "Rails Examples":http://railsapps.github.io/ | "Haml and Rails":http://railsapps.github.io/rails-haml.html | "Devise with Mongoid":http://railsapps.github.io/tutorial-rails-mongoid-devise.html |
 | "Rails Starter Apps":http://railsapps.github.io/rails-examples-tutorials.html | "Rails Application Layout":http://railsapps.github.io/rails-default-application-layout.html | "OmniAuth with Mongoid":http://railsapps.github.io/tutorial-rails-mongoid-omniauth.html |
 | | "HTML5 Boilerplate for Rails":http://railsapps.github.io/rails-html5-boilerplate.html | "Subdomains with Devise":http://railsapps.github.io/tutorial-rails-subdomains.html |

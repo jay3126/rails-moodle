@@ -32,7 +32,7 @@ Recipes:
 Preferences:
 
 * git: true
-* apps4: rails-devise
+* apps4: rails-moodle
 * unit_test: false
 * integration: false
 * fixtures: false
