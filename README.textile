@@ -7,7 +7,7 @@ _Install Ruby 2.1.1:_
 4.  $ rvm install 2.1.1
 5.  $ rvm use 2.1.1@rails_4.1.1 --create
 
-_Install Rails 4.1.1_
+_Install Rails 4.1.0_
 6.  $ gem install rails -v 4.1.0.beta1 --pre
 
 _Set up the Rails app on your localhost:_
